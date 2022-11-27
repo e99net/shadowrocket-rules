@@ -1,0 +1,9 @@
+#!name=大师兄去开屏广告和弹窗
+#!desc=大师兄去开屏广告和弹窗
+
+[URL Rewrite]
+^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v2\/top_notice? _ REJECT
+^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v2\/advert.position.[^2](?<=position..) _ REJECT
+
+[MITM]
+hostname = sdk.alibaba.com.ailbaba.me
